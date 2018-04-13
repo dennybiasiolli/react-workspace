@@ -12,10 +12,23 @@
 <body>
   <div id="root"></div>
   <script type="text/babel">
-    ReactDOM.render(
-      <h1>Hello, React Workspace!</h1>,
-      document.getElementById('root')
+    const FunctionalComponent = (props) => (
+      <h3>{props.name}</h3>
     );
+
+    class ClassComponent extends React.Component {
+      render() {
+        return <h3>{this.props.name}</h3>;
+      }
+    }
+
+    ReactDOM.render((
+      <div>
+        <h1>Hello, React Workspace!</h1>
+        <FunctionalComponent name="Functional Component" />
+        <ClassComponent name="Class Component" />
+      </div>
+    ), document.getElementById('root'));
   </script>
   <!--
     Note: this page is a great way to try React but it's not suitable for production.
