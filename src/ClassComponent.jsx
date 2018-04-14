@@ -3,3 +3,7 @@ class ClassComponent extends React.Component {
     return <h3>{this.props.name}</h3>;
   }
 }
+
+ClassComponent.propTypes = {
+  name: PropTypes.string.isRequired,
+};

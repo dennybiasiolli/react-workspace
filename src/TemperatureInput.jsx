@@ -24,3 +24,8 @@ class TemperatureInput extends React.Component {
     );
   }
 }
+
+TemperatureInput.propTypes = {
+  temperature: PropTypes.string.isRequired,
+  scale: PropTypes.string.isRequired,
+};
