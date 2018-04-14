@@ -1,3 +1,8 @@
+import React from 'react';
+
+import TemperatureInput from './TemperatureInput';
+import BoilingVerdict from './BoilingVerdict';
+
 const toCelsius = (fahrenheit) => {
   return (fahrenheit - 32) * 5 / 9;
 }
@@ -55,3 +60,5 @@ class Calculator extends React.Component {
     );
   }
 }
+
+export default Calculator;

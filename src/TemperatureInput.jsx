@@ -1,3 +1,6 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+
 const scaleNames = {
   c: 'Celsius',
   f: 'Fahrenheit'
@@ -29,3 +32,5 @@ TemperatureInput.propTypes = {
   temperature: PropTypes.string.isRequired,
   scale: PropTypes.string.isRequired,
 };
+
+export default TemperatureInput;

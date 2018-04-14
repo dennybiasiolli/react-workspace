@@ -1,3 +1,6 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+
 const BoilingVerdict = (props) => {
   if (props.celsius >= 100) {
     return <p>The water would boil.</p>;
@@ -8,3 +11,5 @@ const BoilingVerdict = (props) => {
 BoilingVerdict.propTypes = {
   celsius: PropTypes.number.isRequired,
 };
+
+export default BoilingVerdict;
