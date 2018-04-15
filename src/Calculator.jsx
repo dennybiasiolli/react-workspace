@@ -51,7 +51,7 @@ class Calculator extends React.Component {
         />
 
         <BoilingVerdict
-          celsius={parseFloat(celsius)}
+          celsius={parseFloat(celsius || 0)}
         />
 
       </div>

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calculator should match enzyme shallow snapshot 1`] = `
+<div>
+  <TemperatureInput
+    onTemperatureChange={[Function]}
+    scale="c"
+    temperature=""
+  />
+  <TemperatureInput
+    onTemperatureChange={[Function]}
+    scale="f"
+    temperature=""
+  />
+  <BoilingVerdict
+    celsius={0}
+  />
+</div>
+`;

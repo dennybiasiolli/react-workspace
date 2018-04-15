@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should match enzyme shallow snapshot 1`] = `
+<div>
+  <h1>
+    Hello, React Workspace!
+  </h1>
+  <FunctionalComponent
+    name="Functional Component"
+  />
+  <ClassComponent
+    name="Class Component"
+  />
+  <Clock />
+  <Toggle />
+  <CustomForm />
+  <Calculator />
+</div>
+`;

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Clock should match enzyme shallow snapshot 1`] = `
+<div>
+  <h3>
+    TimerComponent
+  </h3>
+  <p>
+    It is 
+    18:50:37
+    .
+  </p>
+</div>
+`;

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TemperatureInput should match enzyme shallow snapshot 1`] = `
+<fieldset>
+  <legend>
+    Enter temperature in 
+    Celsius
+    :
+  </legend>
+  <input
+    onChange={[Function]}
+    value="100"
+  />
+</fieldset>
+`;
