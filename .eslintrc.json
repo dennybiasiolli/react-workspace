@@ -19,5 +19,12 @@
         "allowChildren": false
       }
     ]
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "build/webpack.config.babel.js"
+      }
+    }
   }
 }
