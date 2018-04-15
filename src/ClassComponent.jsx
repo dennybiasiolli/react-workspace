@@ -2,8 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 class ClassComponent extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      test: true,
+    };
+  }
+
   render() {
-    return <h3>{this.props.name}</h3>;
+    return this.state.test && <h3>{this.props.name}</h3>;
   }
 }
 

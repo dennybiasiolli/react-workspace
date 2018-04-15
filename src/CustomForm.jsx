@@ -1,6 +1,11 @@
 import React from 'react';
 
 class CustomForm extends React.Component {
+  static handleSubmit(e) {
+    alert('The form was submitted'); // eslint-disable-line no-alert
+    e.preventDefault();
+  }
+
   constructor(props) {
     super(props);
 
@@ -38,30 +43,38 @@ class CustomForm extends React.Component {
     this.setState({ selectMultipleVal: selectedOptions });
   }
 
-  handleSubmit(e) {
-    alert('The form was submitted');
-    e.preventDefault();
-  }
-
   render() {
     return (
       <form onSubmit={e => this.handleSubmit(e)}>
         <p>
-          <label>
+          <label htmlFor="input01">
             Text:
-            <input type="text" value={this.state.textVal} onChange={e => this.handleChangeText(e)} />
+            <input
+              id="input01"
+              type="text"
+              value={this.state.textVal}
+              onChange={e => this.handleChangeText(e)}
+            />
           </label>
         </p>
         <p>
-          <label>
+          <label htmlFor="input02">
             Textarea:
-            <textarea value={this.state.textareaVal} onChange={e => this.handleChangeTextarea(e)} />
+            <textarea
+              id="input02"
+              value={this.state.textareaVal}
+              onChange={e => this.handleChangeTextarea(e)}
+            />
           </label>
         </p>
         <p>
-          <label>
+          <label htmlFor="input03">
             Pick your favorite La Croix flavor:
-            <select value={this.state.selectVal} onChange={e => this.handleChangeSelect(e)}>
+            <select
+              id="input03"
+              value={this.state.selectVal}
+              onChange={e => this.handleChangeSelect(e)}
+            >
               {
                 this.selectable.map(e =>
                   <option key={e.value} value={e.value}>{e.text}</option>)
@@ -70,9 +83,14 @@ class CustomForm extends React.Component {
           </label>
         </p>
         <p>
-          <label>
+          <label htmlFor="input04">
             Pick your favorite La Croix flavors:
-            <select multiple value={this.state.selectMultipleVal} onChange={e => this.handleChangeSelectMultiple(e)}>
+            <select
+              id="input04"
+              multiple
+              value={this.state.selectMultipleVal}
+              onChange={e => this.handleChangeSelectMultiple(e)}
+            >
               {
                 this.selectable.map(e =>
                   <option key={e.value} value={e.value}>{e.text}</option>)

@@ -3,9 +3,9 @@ import React from 'react';
 import TemperatureInput from './TemperatureInput';
 import BoilingVerdict from './BoilingVerdict';
 
-const toCelsius = fahrenheit => (fahrenheit - 32) * 5 / 9;
+const toCelsius = fahrenheit => ((fahrenheit - 32) * 5) / 9;
 
-const toFahrenheit = celsius => (celsius * 9 / 5) + 32;
+const toFahrenheit = celsius => ((celsius * 9) / 5) + 32;
 
 const tryConvert = (temperature, convert) => {
   const input = parseFloat(temperature);
@@ -32,8 +32,7 @@ class Calculator extends React.Component {
   }
 
   render() {
-    const scale = this.state.scale;
-    const temperature = this.state.temperature;
+    const { scale, temperature } = this.state;
     const celsius = scale === 'f' ? tryConvert(temperature, toCelsius) : temperature;
     const fahrenheit = scale === 'c' ? tryConvert(temperature, toFahrenheit) : temperature;
 
@@ -42,13 +41,13 @@ class Calculator extends React.Component {
         <TemperatureInput
           scale="c"
           temperature={celsius}
-          onTemperatureChange={temperature => this.handleCelsiusChange(temperature)}
+          onTemperatureChange={temp => this.handleCelsiusChange(temp)}
         />
 
         <TemperatureInput
           scale="f"
           temperature={fahrenheit}
-          onTemperatureChange={temperature => this.handleFahrenheitChange(temperature)}
+          onTemperatureChange={temp => this.handleFahrenheitChange(temp)}
         />
 
         <BoilingVerdict
