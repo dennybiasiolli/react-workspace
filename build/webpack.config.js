@@ -26,5 +26,9 @@ module.exports = {
       template: 'src/index.html'
     })
   ],
-  mode: 'development'
+  mode: 'development',
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true
+  }
 };
