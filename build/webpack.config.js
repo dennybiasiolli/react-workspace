@@ -1,23 +1,15 @@
 import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
+import module from './webpack.module';
+
 export default {
   entry: './src',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, '../dist')
   },
-  module: {
-    rules: [
-      {
-        test: /\.jsx?$/,
-        exclude: /(node_modules|bower_components)/,
-        use: {
-          loader: 'babel-loader?cacheDirectory=true'
-        }
-      }
-    ]
-  },
+  module,
   resolve: {
     extensions: ['.js', '.jsx'],
   },
@@ -25,10 +17,5 @@ export default {
     new HtmlWebpackPlugin({
       template: 'src/index.html'
     })
-  ],
-  mode: 'development',
-  devServer: {
-    contentBase: path.join(__dirname, 'dist'),
-    compress: true
-  }
+  ]
 };

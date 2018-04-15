@@ -4,8 +4,8 @@
   "description": "My Custom React Workspace",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config build/webpack.config.babel.js",
-    "start": "webpack-dev-server --config build/webpack.config.babel.js",
+    "build": "webpack --config build/webpack.config.prod.babel.js",
+    "start": "webpack-dev-server --config build/webpack.config.dev.babel.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Denny Biasiolli <denny.biasiolli@gmail.com>",
