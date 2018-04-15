@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const FunctionalComponent = (props) => (
+const FunctionalComponent = props => (
   <h3>{props.name}</h3>
 );
 

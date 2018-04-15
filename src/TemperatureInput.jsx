@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const scaleNames = {
   c: 'Celsius',
-  f: 'Fahrenheit'
+  f: 'Fahrenheit',
 };
 
 class TemperatureInput extends React.Component {
@@ -21,8 +21,10 @@ class TemperatureInput extends React.Component {
     return (
       <fieldset>
         <legend>Enter temperature in {scaleNames[scale]}:</legend>
-        <input value={temperature}
-          onChange={(e) => this.handleChange(e)} />
+        <input
+          value={temperature}
+          onChange={e => this.handleChange(e)}
+        />
       </fieldset>
     );
   }

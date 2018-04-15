@@ -10,7 +10,7 @@ class Clock extends React.Component {
     // setting up the timer when component is rendered to DOM for the first time
     this.timerID = setInterval(
       () => this.tick(),
-      1000
+      1000,
     );
   }
 
@@ -21,7 +21,7 @@ class Clock extends React.Component {
 
   tick() {
     this.setState({
-      date: new Date()
+      date: new Date(),
     });
   }
 

@@ -8,7 +8,7 @@ class CustomForm extends React.Component {
       { value: 'grapefruit', text: 'Grapefruit' },
       { value: 'lime', text: 'Lime' },
       { value: 'coconut', text: 'Coconut' },
-      { value: 'mango', text: 'Mango' }
+      { value: 'mango', text: 'Mango' },
     ];
 
     this.state = {
@@ -33,8 +33,8 @@ class CustomForm extends React.Component {
 
   handleChangeSelectMultiple(e) {
     const selectedOptions = [...e.target.options]
-      .filter((o) => o.selected)
-      .map((o) => o.value);
+      .filter(o => o.selected)
+      .map(o => o.value);
     this.setState({ selectMultipleVal: selectedOptions });
   }
 
@@ -45,27 +45,26 @@ class CustomForm extends React.Component {
 
   render() {
     return (
-      <form onSubmit={(e) => this.handleSubmit(e)}>
+      <form onSubmit={e => this.handleSubmit(e)}>
         <p>
           <label>
             Text:
-            <input type="text" value={this.state.textVal} onChange={(e) => this.handleChangeText(e)} />
+            <input type="text" value={this.state.textVal} onChange={e => this.handleChangeText(e)} />
           </label>
         </p>
         <p>
           <label>
             Textarea:
-            <textarea value={this.state.textareaVal} onChange={(e) => this.handleChangeTextarea(e)} />
+            <textarea value={this.state.textareaVal} onChange={e => this.handleChangeTextarea(e)} />
           </label>
         </p>
         <p>
           <label>
             Pick your favorite La Croix flavor:
-            <select value={this.state.selectVal} onChange={(e) => this.handleChangeSelect(e)}>
+            <select value={this.state.selectVal} onChange={e => this.handleChangeSelect(e)}>
               {
-                this.selectable.map((e) =>
-                  <option key={e.value} value={e.value}>{e.text}</option>
-                )
+                this.selectable.map(e =>
+                  <option key={e.value} value={e.value}>{e.text}</option>)
               }
             </select>
           </label>
@@ -73,11 +72,10 @@ class CustomForm extends React.Component {
         <p>
           <label>
             Pick your favorite La Croix flavors:
-            <select multiple={true} value={this.state.selectMultipleVal} onChange={(e) => this.handleChangeSelectMultiple(e)}>
+            <select multiple value={this.state.selectMultipleVal} onChange={e => this.handleChangeSelectMultiple(e)}>
               {
-                this.selectable.map((e) =>
-                  <option key={e.value} value={e.value}>{e.text}</option>
-                )
+                this.selectable.map(e =>
+                  <option key={e.value} value={e.value}>{e.text}</option>)
               }
             </select>
           </label>
