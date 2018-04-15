@@ -45,7 +45,7 @@ class CustomForm extends React.Component {
 
   render() {
     return (
-      <form onSubmit={e => this.handleSubmit(e)}>
+      <form onSubmit={e => CustomForm.handleSubmit(e)}>
         <p>
           <label htmlFor="input01">
             Text:
