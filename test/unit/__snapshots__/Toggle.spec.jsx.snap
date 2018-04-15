@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toggle should match react-test-renderer snapshot 1`] = `
+<div>
+  <p>
+    Is toggled 
+    OFF
+  </p>
+  <button
+    onClick={[Function]}
+  >
+    Toggle
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Toggle ON
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Toggle OFF
+  </button>
+</div>
+`;
+
+exports[`Toggle should match react-test-renderer snapshot 2`] = `
+<div>
+  <p>
+    Is toggled 
+    ON
+  </p>
+  <button
+    onClick={[Function]}
+  >
+    Toggle
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Toggle ON
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Toggle OFF
+  </button>
+</div>
+`;
+
+exports[`Toggle should match react-test-renderer snapshot 3`] = `
+<div>
+  <p>
+    Is toggled 
+    OFF
+  </p>
+  <button
+    onClick={[Function]}
+  >
+    Toggle
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Toggle ON
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Toggle OFF
+  </button>
+</div>
+`;
