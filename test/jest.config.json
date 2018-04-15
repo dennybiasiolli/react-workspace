@@ -13,5 +13,6 @@
   },
   "testMatch": [
     "**/test/unit/**/*.spec.js?(x)"
-  ]
+  ],
+  "setupTestFrameworkScriptFile": "<rootDir>/test/setupTests.js"
 }
