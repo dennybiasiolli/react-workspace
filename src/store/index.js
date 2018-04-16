@@ -25,7 +25,13 @@ const counter = (state = 0, action) => {
 
 // Create a Redux store holding the state of your app.
 // Its API is { subscribe, dispatch, getState }.
-const store = createStore(counter);
+const isDev = process.env.NODE_ENV === 'development';
+const hasReduxDevTools = window.__REDUX_DEVTOOLS_EXTENSION__; // eslint-disable-line
+const reduxDevTools = hasReduxDevTools && window.__REDUX_DEVTOOLS_EXTENSION__()  // eslint-disable-line
+const store = createStore(
+  counter,
+  hasReduxDevTools && isDev && reduxDevTools,
+);
 
 // You can use subscribe() to update the UI in response to state changes.
 // Normally you'd use a view binding library (e.g. React Redux) rather than subscribe() directly.
