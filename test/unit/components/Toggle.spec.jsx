@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer';
 import { shallow, mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
-import Toggle from '@/Toggle';
+import Toggle from '@/components/Toggle';
 
 describe('Toggle', () => {
   test('should match react-test-renderer snapshot', () => {

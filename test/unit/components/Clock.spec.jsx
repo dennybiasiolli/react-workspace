@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
-import Clock from '@/Clock';
+import Clock from '@/components/Clock';
 
 // mocking global Date object
 const DATE_TO_USE = new Date(2018, 4, 15, 18, 50, 37);

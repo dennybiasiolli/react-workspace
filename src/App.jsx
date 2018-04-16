@@ -1,11 +1,11 @@
 import React from 'react';
 
-import FunctionalComponent from '@/FunctionalComponent';
-import ClassComponent from '@/ClassComponent';
-import Clock from '@/Clock';
-import Toggle from '@/Toggle';
-import CustomForm from '@/CustomForm';
-import Calculator from '@/Calculator';
+import FunctionalComponent from '@/components/FunctionalComponent';
+import ClassComponent from '@/components/ClassComponent';
+import Clock from '@/components/Clock';
+import Toggle from '@/components/Toggle';
+import CustomForm from '@/components/CustomForm';
+import Calculator from '@/components/Calculator';
 
 const App = () => (
   <div>

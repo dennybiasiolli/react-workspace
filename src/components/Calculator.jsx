@@ -1,7 +1,7 @@
 import React from 'react';
 
-import TemperatureInput from '@/TemperatureInput';
-import BoilingVerdict from '@/BoilingVerdict';
+import TemperatureInput from './TemperatureInput';
+import BoilingVerdict from './BoilingVerdict';
 
 const toCelsius = fahrenheit => ((fahrenheit - 32) * 5) / 9;
 

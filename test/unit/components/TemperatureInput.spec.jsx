@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
-import TemperatureInput from '@/TemperatureInput';
+import TemperatureInput from '@/components/TemperatureInput';
 
 describe('TemperatureInput', () => {
   test('should match enzyme shallow snapshot', () => {
