@@ -1,5 +1,8 @@
 import { createStore } from 'redux';
 
+import actions from './actions';
+import actionTypes from './actionTypes';
+
 /**
  * This is a reducer, a pure function with (state, action) => state signature.
  * It describes how an action transforms the state into the next state.
@@ -38,6 +41,10 @@ const store = createStore(
 // However it can also be handy to persist the current state in the localStorage.
 // store.subscribe(() => console.log(store.getState()));
 
-export { store };
+export {
+  actions,
+  actionTypes,
+  store,
+};
 
 export default store;
