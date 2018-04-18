@@ -5,9 +5,22 @@ import {
   ADD_TODO,
   TOGGLE_TODO,
   SET_VISIBILITY_FILTER,
+  INCREMENT_COUNTER,
+  DECREMENT_COUNTER,
 } from './actionTypes';
 
 const { SHOW_ALL } = VisibilityFilters;
+
+const counter = (state = 0, action) => {
+  switch (action.type) {
+    case INCREMENT_COUNTER:
+      return state + 1;
+    case DECREMENT_COUNTER:
+      return state - 1;
+    default:
+      return state;
+  }
+};
 
 const todos = (state = [], action) => {
   switch (action.type) {
@@ -43,6 +56,7 @@ const visibilityFilter = (state = SHOW_ALL, action) => {
 };
 
 export default combineReducers({
+  counter,
   todos,
   visibilityFilter,
 });
