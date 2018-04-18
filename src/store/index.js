@@ -2,6 +2,7 @@ import { createStore } from 'redux';
 
 import actions from './actions';
 import actionTypes from './actionTypes';
+import reducers from './reducers';
 
 /**
  * This is a reducer, a pure function with (state, action) => state signature.
@@ -44,6 +45,7 @@ const store = createStore(
 export {
   actions,
   actionTypes,
+  reducers,
   store,
 };
 
