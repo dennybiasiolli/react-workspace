@@ -1,27 +1,18 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-class Toggle extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { isToggleOn: false };
-  }
+const Toggle = props => (
+  <div>
+    <p>Is toggled {props.isToggleOn ? 'ON' : 'OFF'}</p>
+    <button onClick={() => props.onToggle()}>Toggle</button>
+    <button onClick={() => props.onToggle(true)}>Toggle ON</button>
+    <button onClick={() => props.onToggle(false)}>Toggle OFF</button>
+  </div>
+);
 
-  handleToggle(e, toggleValue) {
-    this.setState(prevState => ({
-      isToggleOn: toggleValue !== undefined ? toggleValue : !prevState.isToggleOn,
-    }));
-  }
-
-  render() {
-    return (
-      <div>
-        <p>Is toggled {this.state.isToggleOn ? 'ON' : 'OFF'}</p>
-        <button onClick={e => this.handleToggle(e)}>Toggle</button>
-        <button onClick={e => this.handleToggle(e, true)}>Toggle ON</button>
-        <button onClick={e => this.handleToggle(e, false)}>Toggle OFF</button>
-      </div>
-    );
-  }
-}
+Toggle.propTypes = {
+  isToggleOn: PropTypes.bool.isRequired,
+  onToggle: PropTypes.func.isRequired,
+};
 
 export default Toggle;

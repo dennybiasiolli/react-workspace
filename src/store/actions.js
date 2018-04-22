@@ -2,6 +2,7 @@ import {
   ADD_TODO,
   TOGGLE_TODO,
   SET_VISIBILITY_FILTER,
+  TOGGLE_FLAG,
 } from './actionTypes';
 
 /*
@@ -33,4 +34,9 @@ export const toggleTodo = id => ({
 export const setVisibilityFilter = filter => ({
   type: SET_VISIBILITY_FILTER,
   filter,
+});
+
+export const toggleFlag = flag => ({
+  type: TOGGLE_FLAG,
+  flag,
 });

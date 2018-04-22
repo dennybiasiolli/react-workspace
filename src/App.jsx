@@ -4,12 +4,12 @@ import { Provider } from 'react-redux';
 import FunctionalComponent from '@/components/FunctionalComponent';
 import ClassComponent from '@/components/ClassComponent';
 import Clock from '@/components/Clock';
-import Toggle from '@/components/Toggle';
 import CustomForm from '@/components/CustomForm';
 import Calculator from '@/components/Calculator';
 import AddTodo from '@/containers/AddTodo';
 import VisibleTodoList from '@/containers/VisibleTodoList';
 import Footer from '@/components/Footer';
+import Toggle from '@/containers/Toggle';
 
 import { store } from '@/store';
 
@@ -19,15 +19,17 @@ const App = () => (
     <FunctionalComponent name="Functional Component" />
     <ClassComponent name="Class Component" />
     <Clock />
-    <Toggle />
     <CustomForm />
     <Calculator />
 
     <Provider store={store}>
       <div>
-        <AddTodo />
-        <VisibleTodoList />
-        <Footer />
+        <div>
+          <AddTodo />
+          <VisibleTodoList />
+          <Footer />
+        </div>
+        <Toggle />
       </div>
     </Provider>
   </div>

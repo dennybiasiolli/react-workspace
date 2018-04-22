@@ -12,7 +12,6 @@ exports[`App should match enzyme shallow snapshot 1`] = `
     name="Class Component"
   />
   <Clock />
-  <Toggle />
   <CustomForm />
   <Calculator />
   <Provider
@@ -27,9 +26,12 @@ exports[`App should match enzyme shallow snapshot 1`] = `
     }
   >
     <div>
-      <Connect(MyAddTodo) />
-      <Connect(TodoList) />
-      <Footer />
+      <div>
+        <Connect(MyAddTodo) />
+        <Connect(TodoList) />
+        <Footer />
+      </div>
+      <Connect(Toggle) />
     </div>
   </Provider>
 </div>

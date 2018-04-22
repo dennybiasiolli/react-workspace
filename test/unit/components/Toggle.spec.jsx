@@ -7,51 +7,81 @@ import Toggle from '@/components/Toggle';
 
 describe('Toggle', () => {
   test('should match react-test-renderer snapshot', () => {
-    const component = renderer.create(<Toggle />);
-
+    const props = {
+      isToggleOn: false,
+      onToggle: jest.fn(() => {
+        props.isToggleOn = !props.isToggleOn;
+      }),
+    };
+    let component = renderer.create(<Toggle {...props} />);
     let tree = component.toJSON();
     expect(tree).toMatchSnapshot();
 
     // manually trigger the toggle
     tree.children[1].props.onClick();
+    expect(props.onToggle).toHaveBeenCalledWith();
+
     // re-rendering
+    component = renderer.create(<Toggle {...props} />);
     tree = component.toJSON();
     expect(tree).toMatchSnapshot();
 
     // manually trigger the toggle
     tree.children[1].props.onClick();
+    expect(props.onToggle).toHaveBeenCalledWith();
     // re-rendering
+    component = renderer.create(<Toggle {...props} />);
     tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   test('should match enzyme shallow snapshot', () => {
-    const wrapper = shallow(<Toggle />);
+    const props = {
+      isToggleOn: false,
+      onToggle: jest.fn(() => {
+        props.isToggleOn = !props.isToggleOn;
+      }),
+    };
+    const wrapper = shallow(<Toggle {...props} />);
     expect(wrapper.find('button')).toHaveLength(3);
 
     expect(toJson(wrapper)).toMatchSnapshot();
 
     // manually trigger the toggle
     wrapper.find('button').at(0).simulate('click');
+    expect(props.onToggle).toHaveBeenCalledWith();
+    wrapper.setProps(props);
     expect(toJson(wrapper)).toMatchSnapshot();
 
     // manually trigger the toggle
     wrapper.find('button').at(0).simulate('click');
+    expect(props.onToggle).toHaveBeenCalledWith();
+    wrapper.setProps(props);
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 
   test('should match enzyme mount snapshot', () => {
-    const wrapper = mount(<Toggle />);
+    const props = {
+      isToggleOn: false,
+      onToggle: jest.fn(() => {
+        props.isToggleOn = !props.isToggleOn;
+      }),
+    };
+    const wrapper = mount(<Toggle {...props} />);
     expect(wrapper.find('button')).toHaveLength(3);
 
     expect(toJson(wrapper)).toMatchSnapshot();
 
     // manually trigger the toggle
     wrapper.find('button').at(0).simulate('click');
+    expect(props.onToggle).toHaveBeenCalledWith();
+    wrapper.setProps(props);
     expect(toJson(wrapper)).toMatchSnapshot();
 
     // manually trigger the toggle
     wrapper.find('button').at(0).simulate('click');
+    expect(props.onToggle).toHaveBeenCalledWith();
+    wrapper.setProps(props);
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 });

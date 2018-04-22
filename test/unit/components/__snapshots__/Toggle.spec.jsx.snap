@@ -1,7 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Toggle should match enzyme mount snapshot 1`] = `
-<Toggle>
+<Toggle
+  isToggleOn={false}
+  onToggle={[MockFunction]}
+>
   <div>
     <p>
       Is toggled 
@@ -27,7 +30,16 @@ exports[`Toggle should match enzyme mount snapshot 1`] = `
 `;
 
 exports[`Toggle should match enzyme mount snapshot 2`] = `
-<Toggle>
+<Toggle
+  isToggleOn={true}
+  onToggle={
+    [MockFunction] {
+      "calls": Array [
+        Array [],
+      ],
+    }
+  }
+>
   <div>
     <p>
       Is toggled 
@@ -53,7 +65,17 @@ exports[`Toggle should match enzyme mount snapshot 2`] = `
 `;
 
 exports[`Toggle should match enzyme mount snapshot 3`] = `
-<Toggle>
+<Toggle
+  isToggleOn={false}
+  onToggle={
+    [MockFunction] {
+      "calls": Array [
+        Array [],
+        Array [],
+      ],
+    }
+  }
+>
   <div>
     <p>
       Is toggled 
