@@ -1,4 +1,5 @@
 import React from 'react';
+import { Provider } from 'react-redux';
 
 import FunctionalComponent from '@/components/FunctionalComponent';
 import ClassComponent from '@/components/ClassComponent';
@@ -6,6 +7,9 @@ import Clock from '@/components/Clock';
 import Toggle from '@/components/Toggle';
 import CustomForm from '@/components/CustomForm';
 import Calculator from '@/components/Calculator';
+import AddTodo from '@/containers/AddTodo';
+import VisibleTodoList from '@/containers/VisibleTodoList';
+import Footer from '@/components/Footer';
 
 import { store } from '@/store';
 
@@ -18,6 +22,14 @@ const App = () => (
     <Toggle />
     <CustomForm />
     <Calculator />
+
+    <Provider store={store}>
+      <div>
+        <AddTodo />
+        <VisibleTodoList />
+        <Footer />
+      </div>
+    </Provider>
   </div>
 );
 

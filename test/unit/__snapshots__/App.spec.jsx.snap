@@ -15,5 +15,22 @@ exports[`App should match enzyme shallow snapshot 1`] = `
   <Toggle />
   <CustomForm />
   <Calculator />
+  <Provider
+    store={
+      Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
+    }
+  >
+    <div>
+      <Connect(MyAddTodo) />
+      <Connect(TodoList) />
+      <Footer />
+    </div>
+  </Provider>
 </div>
 `;
