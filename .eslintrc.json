@@ -5,6 +5,8 @@
     "jest": true
   },
   "rules": {
+    "jsx-a11y/anchor-is-valid": 1,
+    "jsx-a11y/click-events-have-key-events": 1,
     "jsx-a11y/label-has-for": [
       2,
       {
@@ -19,7 +21,8 @@
         },
         "allowChildren": false
       }
-    ]
+    ],
+    "jsx-a11y/no-noninteractive-element-interactions": 1
   },
   "settings": {
     "import/resolver": {
