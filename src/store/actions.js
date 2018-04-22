@@ -17,15 +17,16 @@ export const VisibilityFilters = {
 /* --------------- */
 
 
-export const addTodo = text => ({
+export const addTodo = (id, text) => ({
   type: ADD_TODO,
+  id,
   text,
 });
 
 
-export const toggleTodo = index => ({
+export const toggleTodo = id => ({
   type: TOGGLE_TODO,
-  index,
+  id,
 });
 
 
