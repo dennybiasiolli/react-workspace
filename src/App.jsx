@@ -5,11 +5,11 @@ import FunctionalComponent from '@/components/FunctionalComponent';
 import ClassComponent from '@/components/ClassComponent';
 import Clock from '@/components/Clock';
 import CustomForm from '@/components/CustomForm';
-import Calculator from '@/components/Calculator';
 import AddTodo from '@/containers/AddTodo';
 import VisibleTodoList from '@/containers/VisibleTodoList';
 import Footer from '@/components/Footer';
 import Toggle from '@/containers/Toggle';
+import Calculator from '@/containers/Calculator';
 
 import { store } from '@/store';
 
@@ -20,7 +20,6 @@ const App = () => (
     <ClassComponent name="Class Component" />
     <Clock />
     <CustomForm />
-    <Calculator />
 
     <Provider store={store}>
       <div>
@@ -30,6 +29,7 @@ const App = () => (
           <Footer />
         </div>
         <Toggle />
+        <Calculator />
       </div>
     </Provider>
   </div>

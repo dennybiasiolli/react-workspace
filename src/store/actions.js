@@ -3,6 +3,8 @@ import {
   TOGGLE_TODO,
   SET_VISIBILITY_FILTER,
   TOGGLE_FLAG,
+  SET_CELSIUS,
+  SET_FAHRENHEIT,
 } from './actionTypes';
 
 /*
@@ -39,4 +41,14 @@ export const setVisibilityFilter = filter => ({
 export const toggleFlag = flag => ({
   type: TOGGLE_FLAG,
   flag,
+});
+
+export const setCelsius = temperature => ({
+  type: SET_CELSIUS,
+  temperature,
+});
+
+export const setFahrenheit = temperature => ({
+  type: SET_FAHRENHEIT,
+  temperature,
 });

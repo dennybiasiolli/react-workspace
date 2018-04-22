@@ -5,15 +5,15 @@ exports[`Calculator should match enzyme shallow snapshot 1`] = `
   <TemperatureInput
     onTemperatureChange={[Function]}
     scale="c"
-    temperature=""
+    temperature="celsius"
   />
   <TemperatureInput
     onTemperatureChange={[Function]}
     scale="f"
-    temperature=""
+    temperature="fahrenheit"
   />
   <BoilingVerdict
-    celsius={0}
+    celsius={NaN}
   />
 </div>
 `;

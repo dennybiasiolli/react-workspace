@@ -13,7 +13,6 @@ exports[`App should match enzyme shallow snapshot 1`] = `
   />
   <Clock />
   <CustomForm />
-  <Calculator />
   <Provider
     store={
       Object {
@@ -32,6 +31,7 @@ exports[`App should match enzyme shallow snapshot 1`] = `
         <Footer />
       </div>
       <Connect(Toggle) />
+      <Connect(Calculator) />
     </div>
   </Provider>
 </div>
