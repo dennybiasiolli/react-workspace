@@ -10,6 +10,7 @@ import VisibleTodoList from '@/containers/VisibleTodoList';
 import Footer from '@/components/Footer';
 import Toggle from '@/containers/Toggle';
 import Calculator from '@/containers/Calculator';
+import PostList from '@/containers/PostList';
 
 import { store } from '@/store';
 
@@ -30,6 +31,7 @@ const App = () => (
         </div>
         <Toggle />
         <Calculator />
+        <PostList />
       </div>
     </Provider>
   </div>
