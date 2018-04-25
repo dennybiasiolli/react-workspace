@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link should match enzyme shallow snapshot 1`] = `
+<a
+  href=""
+  onClick={[Function]}
+>
+  Test 1
+</a>
+`;
+
+exports[`Link should match enzyme shallow snapshot 2`] = `
+<span>
+  Test 1
+</span>
+`;

@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer should match enzyme shallow snapshot 1`] = `
+<p>
+  Show:
+   
+  <Connect(Link)
+    filter="SHOW_ALL"
+  >
+    All
+  </Connect(Link)>
+  , 
+  <Connect(Link)
+    filter="SHOW_ACTIVE"
+  >
+    Active
+  </Connect(Link)>
+  , 
+  <Connect(Link)
+    filter="SHOW_COMPLETED"
+  >
+    Completed
+  </Connect(Link)>
+</p>
+`;
