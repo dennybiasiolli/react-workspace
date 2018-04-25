@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 
 import { addTodo } from '@/store/actions';
 
-const MyAddTodo = ({ dispatch }) => {
+export const AddTodo = ({ dispatch }) => {
   let input;
 
   return (
@@ -32,10 +32,8 @@ const MyAddTodo = ({ dispatch }) => {
   );
 };
 
-MyAddTodo.propTypes = {
+AddTodo.propTypes = {
   dispatch: PropTypes.func.isRequired,
 };
 
-const AddTodo = connect()(MyAddTodo);
-
-export default AddTodo;
+export default connect()(AddTodo);

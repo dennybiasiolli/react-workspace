@@ -14,9 +14,7 @@ const mapDispatchToProps = dispatch => ({
   onFahrenheitChange: temperature => dispatch(setFahrenheit(temperature)),
 });
 
-const Calculator = connect(
+export default connect(
   mapStateToProps,
   mapDispatchToProps,
 )(CalculatorComponent);
-
-export default Calculator;

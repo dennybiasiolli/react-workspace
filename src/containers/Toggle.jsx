@@ -11,9 +11,7 @@ const mapDispatchToProps = dispatch => ({
   onToggle: flag => dispatch(toggleFlag(flag)),
 });
 
-const Toggle = connect(
+export default connect(
   mapStateToProps,
   mapDispatchToProps,
 )(ToggleComponent);
-
-export default Toggle;

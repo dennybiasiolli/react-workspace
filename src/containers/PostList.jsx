@@ -13,9 +13,7 @@ const mapDispatchToProps = dispatch => ({
   onFetchPosts: params => fetchPostsAsync(params)(dispatch),
 });
 
-const PostList = connect(
+export default connect(
   mapStateToProps,
   mapDispatchToProps,
 )(PostListComponent);
-
-export default PostList;
