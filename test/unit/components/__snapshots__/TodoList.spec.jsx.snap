@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoList should match enzyme shallow snapshot 1`] = `
+<ul>
+  <Todo
+    completed={false}
+    id={1}
+    key="1"
+    onClick={[Function]}
+    text="todo 1"
+  />
+  <Todo
+    completed={true}
+    id={2}
+    key="2"
+    onClick={[Function]}
+    text="todo 2"
+  />
+</ul>
+`;

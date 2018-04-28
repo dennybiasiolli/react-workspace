@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Todo should match enzyme shallow snapshot 1`] = `
+<li
+  onClick={[MockFunction]}
+  style={
+    Object {
+      "textDecoration": "none",
+    }
+  }
+>
+  test 1
+</li>
+`;
+
+exports[`Todo should match enzyme shallow snapshot 2`] = `
+<li
+  onClick={[MockFunction]}
+  style={
+    Object {
+      "textDecoration": "line-through",
+    }
+  }
+>
+  test 1
+</li>
+`;

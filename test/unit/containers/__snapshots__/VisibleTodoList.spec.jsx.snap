@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VisibleTodoList should match enzyme shallow snapshot 1`] = `
+<TodoList
+  onTodoClick={[Function]}
+  store={
+    Object {
+      "dispatch": [MockFunction],
+      "getState": [MockFunction] {
+        "calls": Array [
+          Array [],
+          Array [],
+        ],
+      },
+      "subscribe": [MockFunction] {
+        "calls": Array [
+          Array [
+            [Function],
+          ],
+        ],
+      },
+    }
+  }
+  storeSubscription={
+    Subscription {
+      "listeners": Object {
+        "clear": [Function],
+        "get": [Function],
+        "notify": [Function],
+        "subscribe": [Function],
+      },
+      "onStateChange": [Function],
+      "parentSub": undefined,
+      "store": Object {
+        "dispatch": [MockFunction],
+        "getState": [MockFunction] {
+          "calls": Array [
+            Array [],
+            Array [],
+          ],
+        },
+        "subscribe": [MockFunction] {
+          "calls": Array [
+            Array [
+              [Function],
+            ],
+          ],
+        },
+      },
+      "unsubscribe": undefined,
+    }
+  }
+  todos={Array []}
+/>
+`;

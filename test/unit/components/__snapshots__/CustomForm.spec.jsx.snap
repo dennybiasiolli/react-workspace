@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomForm should match enzyme shallow snapshot 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <p>
+    <label
+      htmlFor="input01"
+    >
+      Text:
+      <input
+        id="input01"
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+    </label>
+  </p>
+  <p>
+    <label
+      htmlFor="input02"
+    >
+      Textarea:
+      <textarea
+        id="input02"
+        onChange={[Function]}
+        value=""
+      />
+    </label>
+  </p>
+  <p>
+    <label
+      htmlFor="input03"
+    >
+      Pick your favorite La Croix flavor:
+      <select
+        id="input03"
+        onChange={[Function]}
+        value=""
+      >
+        <option
+          key="grapefruit"
+          value="grapefruit"
+        >
+          Grapefruit
+        </option>
+        <option
+          key="lime"
+          value="lime"
+        >
+          Lime
+        </option>
+        <option
+          key="coconut"
+          value="coconut"
+        >
+          Coconut
+        </option>
+        <option
+          key="mango"
+          value="mango"
+        >
+          Mango
+        </option>
+      </select>
+    </label>
+  </p>
+  <p>
+    <label
+      htmlFor="input04"
+    >
+      Pick your favorite La Croix flavors:
+      <select
+        id="input04"
+        multiple={true}
+        onChange={[Function]}
+        value={Array []}
+      >
+        <option
+          key="grapefruit"
+          value="grapefruit"
+        >
+          Grapefruit
+        </option>
+        <option
+          key="lime"
+          value="lime"
+        >
+          Lime
+        </option>
+        <option
+          key="coconut"
+          value="coconut"
+        >
+          Coconut
+        </option>
+        <option
+          key="mango"
+          value="mango"
+        >
+          Mango
+        </option>
+      </select>
+    </label>
+  </p>
+  <input
+    type="submit"
+    value="Submit"
+  />
+</form>
+`;

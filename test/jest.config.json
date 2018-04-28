@@ -1,0 +1,19 @@
+{
+  "rootDir": "..",
+  "collectCoverage": true,
+  "collectCoverageFrom": [
+    "<rootDir>/src/**/*.*"
+  ],
+  "coveragePathIgnorePatterns": [
+    "<rootDir>/src/index.js",
+    "<rootDir>/src/store/reducers/index.js",
+    "<rootDir>/node_modules/"
+  ],
+  "moduleNameMapper": {
+    "@/(.*)$": "<rootDir>/src/$1"
+  },
+  "testMatch": [
+    "**/test/unit/**/*.spec.js?(x)"
+  ],
+  "setupTestFrameworkScriptFile": "<rootDir>/test/setupTests.js"
+}
