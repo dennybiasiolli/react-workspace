@@ -4,13 +4,13 @@ import {
   FETCH_POSTS_SUCCESS,
 } from '@/store/actionTypes';
 
-const defaultType = {
+const defaultState = {
   isFetching: false,
   error: null,
   posts: [],
 };
 
-export default (state = defaultType, action) => {
+export default (state = defaultState, action) => {
   switch (action.type) {
     case FETCH_POSTS_REQUEST:
       return Object.assign({}, state, {

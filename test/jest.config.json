@@ -6,6 +6,7 @@
   ],
   "coveragePathIgnorePatterns": [
     "<rootDir>/src/index.js",
+    "<rootDir>/src/store/reducers/index.js",
     "<rootDir>/node_modules/"
   ],
   "moduleNameMapper": {
