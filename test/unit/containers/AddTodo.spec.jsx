@@ -59,3 +59,17 @@ describe('AddTodo component', () => {
     expect(addTodo).toHaveBeenCalledWith(1524607200000, 'test');
   });
 });
+
+describe('ConnectedAddTodo', () => {
+  test('should match enzyme shallow snapshot', () => {
+    const props = {
+      store: {
+        getState: jest.fn(),
+        subscribe: jest.fn(),
+        dispatch: jest.fn(),
+      },
+    };
+    const wrapper = shallow(<ConnectedAddTodo {...props} />);
+    expect(toJson(wrapper)).toMatchSnapshot();
+  });
+});

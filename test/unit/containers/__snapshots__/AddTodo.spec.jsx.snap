@@ -29,3 +29,20 @@ exports[`AddTodo component should match enzyme shallow snapshot 2`] = `
   </form>
 </div>
 `;
+
+exports[`ConnectedAddTodo should match enzyme shallow snapshot 1`] = `
+<AddTodo
+  dispatch={[MockFunction]}
+  store={
+    Object {
+      "dispatch": [MockFunction],
+      "getState": [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+      },
+      "subscribe": [MockFunction],
+    }
+  }
+/>
+`;
