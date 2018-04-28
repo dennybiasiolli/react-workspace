@@ -8,9 +8,11 @@ import reducers from './reducers';
 // Its API is { subscribe, dispatch, getState }.
 const isDev = process.env.NODE_ENV === 'development';
 const hasReduxDevTools = window.__REDUX_DEVTOOLS_EXTENSION__; // eslint-disable-line
+/* istanbul ignore next line */
 const reduxDevTools = hasReduxDevTools && window.__REDUX_DEVTOOLS_EXTENSION__()  // eslint-disable-line
 const store = createStore(
   reducers,
+  /* istanbul ignore next line */
   hasReduxDevTools && isDev && reduxDevTools,
 );
 

@@ -90,6 +90,6 @@ export const fetchPostsAsync = params =>
           dispatch(fetchPostsFailure(error));
           reject(error);
         }
-      }, 2000);
+      }, 500);
     });
   };
