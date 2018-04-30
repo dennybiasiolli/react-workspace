@@ -12,26 +12,28 @@ exports[`App should match enzyme shallow snapshot 1`] = `
     }
   }
 >
-  <div>
-    <h1>
-      Hello, React Workspace!
-    </h1>
-    <FunctionalComponent
-      name="Functional Component"
-    />
-    <ClassComponent
-      name="Class Component"
-    />
-    <Clock />
-    <CustomForm />
+  <BrowserRouter>
     <div>
-      <Connect(AddTodo) />
-      <Connect(TodoList) />
-      <Footer />
+      <h1>
+        Hello, React Workspace!
+      </h1>
+      <FunctionalComponent
+        name="Functional Component"
+      />
+      <ClassComponent
+        name="Class Component"
+      />
+      <Clock />
+      <CustomForm />
+      <div>
+        <Connect(AddTodo) />
+        <Connect(TodoList) />
+        <Footer />
+      </div>
+      <Connect(Toggle) />
+      <Connect(Calculator) />
+      <Connect(PostList) />
     </div>
-    <Connect(Toggle) />
-    <Connect(Calculator) />
-    <Connect(PostList) />
-  </div>
+  </BrowserRouter>
 </Provider>
 `;

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
 
 import FunctionalComponent from '@/components/FunctionalComponent';
 import ClassComponent from '@/components/ClassComponent';
@@ -16,21 +17,23 @@ import { store } from '@/store';
 
 const App = () => (
   <Provider store={store}>
-    <div>
-      <h1>Hello, React Workspace!</h1>
-      <FunctionalComponent name="Functional Component" />
-      <ClassComponent name="Class Component" />
-      <Clock />
-      <CustomForm />
+    <BrowserRouter>
       <div>
-        <AddTodoComponent />
-        <VisibleTodoList />
-        <Footer />
+        <h1>Hello, React Workspace!</h1>
+        <FunctionalComponent name="Functional Component" />
+        <ClassComponent name="Class Component" />
+        <Clock />
+        <CustomForm />
+        <div>
+          <AddTodoComponent />
+          <VisibleTodoList />
+          <Footer />
+        </div>
+        <Toggle />
+        <Calculator />
+        <PostList />
       </div>
-      <Toggle />
-      <Calculator />
-      <PostList />
-    </div>
+    </BrowserRouter>
   </Provider>
 );
 
