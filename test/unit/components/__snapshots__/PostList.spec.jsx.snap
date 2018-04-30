@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PostList should match enzyme shallow snapshot 1`] = `
+<div>
+  <ul />
+  <button
+    onClick={[Function]}
+  >
+    Fetch Posts OK
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Fetch Posts Errors
+  </button>
+</div>
+`;
+
+exports[`PostList should match enzyme shallow snapshot 2`] = `
+<div>
+  <p>
+    Fetching...
+  </p>
+  <ul />
+  <button
+    onClick={[Function]}
+  >
+    Fetch Posts OK
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Fetch Posts Errors
+  </button>
+</div>
+`;
+
+exports[`PostList should match enzyme shallow snapshot 3`] = `
+<div>
+  <ul>
+    <li
+      key="1"
+    >
+      post 1
+    </li>
+  </ul>
+  <button
+    onClick={[Function]}
+  >
+    Fetch Posts OK
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Fetch Posts Errors
+  </button>
+</div>
+`;
+
+exports[`PostList should match enzyme shallow snapshot 4`] = `
+<div>
+  <p>
+    Fetching...
+  </p>
+  <ul>
+    <li
+      key="1"
+    >
+      post 1
+    </li>
+  </ul>
+  <button
+    onClick={[Function]}
+  >
+    Fetch Posts OK
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Fetch Posts Errors
+  </button>
+</div>
+`;
+
+exports[`PostList should match enzyme shallow snapshot 5`] = `
+<div>
+  <p>
+    Error: 
+    fetching error
+  </p>
+  <ul />
+  <button
+    onClick={[Function]}
+  >
+    Fetch Posts OK
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Fetch Posts Errors
+  </button>
+</div>
+`;
