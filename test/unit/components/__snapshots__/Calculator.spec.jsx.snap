@@ -13,7 +13,7 @@ exports[`Calculator should match enzyme shallow snapshot 1`] = `
     temperature="fahrenheit"
   />
   <BoilingVerdict
-    celsius={NaN}
+    celsius={0}
   />
 </div>
 `;

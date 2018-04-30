@@ -84,4 +84,19 @@ describe('Toggle', () => {
     wrapper.setProps(props);
     expect(toJson(wrapper)).toMatchSnapshot();
   });
+
+
+  test('should call onToggle props clicking on buttons', () => {
+    const props = {
+      isToggleOn: false,
+      onToggle: jest.fn(),
+    };
+    const wrapper = shallow(<Toggle {...props} />);
+    wrapper.find('button').at(0).simulate('click');
+    expect(props.onToggle).toHaveBeenCalledWith();
+    wrapper.find('button').at(1).simulate('click');
+    expect(props.onToggle).toHaveBeenCalledWith(true);
+    wrapper.find('button').at(2).simulate('click');
+    expect(props.onToggle).toHaveBeenCalledWith(false);
+  });
 });

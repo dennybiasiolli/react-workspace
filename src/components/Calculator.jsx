@@ -19,7 +19,7 @@ const Calculator = props => (
     />
 
     <BoilingVerdict
-      celsius={parseFloat(props.celsius || 0)}
+      celsius={parseFloat(props.celsius || 0) || 0}
     />
 
   </div>
