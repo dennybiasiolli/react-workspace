@@ -15,26 +15,23 @@ import PostList from '@/containers/PostList';
 import { store } from '@/store';
 
 const App = () => (
-  <div>
-    <h1>Hello, React Workspace!</h1>
-    <FunctionalComponent name="Functional Component" />
-    <ClassComponent name="Class Component" />
-    <Clock />
-    <CustomForm />
-
-    <Provider store={store}>
+  <Provider store={store}>
+    <div>
+      <h1>Hello, React Workspace!</h1>
+      <FunctionalComponent name="Functional Component" />
+      <ClassComponent name="Class Component" />
+      <Clock />
+      <CustomForm />
       <div>
-        <div>
-          <AddTodoComponent />
-          <VisibleTodoList />
-          <Footer />
-        </div>
-        <Toggle />
-        <Calculator />
-        <PostList />
+        <AddTodoComponent />
+        <VisibleTodoList />
+        <Footer />
       </div>
-    </Provider>
-  </div>
+      <Toggle />
+      <Calculator />
+      <PostList />
+    </div>
+  </Provider>
 );
 
 
