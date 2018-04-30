@@ -9,13 +9,17 @@ jest.mock('@/store/actions', () => ({
   addTodo: jest.fn(),
 }));
 
-const constantDate = new Date('2018-04-25T00:00:00');
+const constantDate = '2018-04-30';
 
 /* eslint no-global-assign:off */
 Date = class extends Date {
   constructor() {
     super();
-    return constantDate;
+    this.date = constantDate;
+    return this.date;
+  }
+  getTime() {
+    return `aaaa${this.date}`;
   }
 };
 
@@ -56,7 +60,7 @@ describe('AddTodo component', () => {
     wrapper.find('form').simulate('submit', clickEvent);
     expect(clickEvent.preventDefault).toHaveBeenCalledWith();
     expect(props.dispatch).toHaveBeenCalledWith('return addTodo action');
-    expect(addTodo).toHaveBeenCalledWith(1524607200000, 'test');
+    expect(addTodo).toHaveBeenCalledWith('aaaa2018-04-30', 'test');
   });
 });
 
