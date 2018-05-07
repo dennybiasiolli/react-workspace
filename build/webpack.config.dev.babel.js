@@ -7,5 +7,6 @@ export default Object.assign({}, baseConfig, {
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
+    historyApiFallback: true,
   },
 });
