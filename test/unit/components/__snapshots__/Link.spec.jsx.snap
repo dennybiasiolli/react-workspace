@@ -10,6 +10,7 @@ exports[`Link should match enzyme shallow snapshot 1`] = `
       "textDecoration": undefined,
     }
   }
+  type="button"
 >
   Test 1
 </button>
@@ -25,6 +26,7 @@ exports[`Link should match enzyme shallow snapshot 2`] = `
       "textDecoration": "underline",
     }
   }
+  type="button"
 >
   Test 1
 </button>

@@ -1,12 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Toggle = props => (
+const Toggle = ({ isToggleOn, onToggle }) => (
   <div>
-    <p>Is toggled {props.isToggleOn ? 'ON' : 'OFF'}</p>
-    <button onClick={() => props.onToggle()}>Toggle</button>
-    <button onClick={() => props.onToggle(true)}>Toggle ON</button>
-    <button onClick={() => props.onToggle(false)}>Toggle OFF</button>
+    <p>
+      Is toggled
+      {isToggleOn ? 'ON' : 'OFF'}
+    </p>
+    <button type="button" onClick={() => onToggle()}>Toggle</button>
+    <button type="button" onClick={() => onToggle(true)}>Toggle ON</button>
+    <button type="button" onClick={() => onToggle(false)}>Toggle OFF</button>
   </div>
 );
 

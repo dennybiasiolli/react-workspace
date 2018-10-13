@@ -40,6 +40,12 @@ exports[`ConnectedAddTodo should match enzyme shallow snapshot 1`] = `
         "calls": Array [
           Array [],
         ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
       },
       "subscribe": [MockFunction],
     }

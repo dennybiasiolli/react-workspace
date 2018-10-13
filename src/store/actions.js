@@ -70,26 +70,25 @@ export const fetchPostsSuccess = posts => ({
   posts,
 });
 
-export const fetchPostsAsync = params =>
-  (dispatch) => {
-    dispatch(fetchPostsRequest());
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        if (params) {
-          const posts = [
-            { id: 1, description: 'First post' },
-            { id: 2, description: 'Second post' },
-            { id: 3, description: 'Third post' },
-          ];
-          dispatch(fetchPostsSuccess(posts));
-          resolve(posts);
-        } else {
-          const error = {
-            description: 'No params passed',
-          };
-          dispatch(fetchPostsFailure(error));
-          reject(error);
-        }
-      }, 500);
-    });
-  };
+export const fetchPostsAsync = params => (dispatch) => {
+  dispatch(fetchPostsRequest());
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (params) {
+        const posts = [
+          { id: 1, description: 'First post' },
+          { id: 2, description: 'Second post' },
+          { id: 3, description: 'Third post' },
+        ];
+        dispatch(fetchPostsSuccess(posts));
+        resolve(posts);
+      } else {
+        const error = {
+          description: 'No params passed',
+        };
+        dispatch(fetchPostsFailure(error));
+        reject(error);
+      }
+    }, 500);
+  });
+};

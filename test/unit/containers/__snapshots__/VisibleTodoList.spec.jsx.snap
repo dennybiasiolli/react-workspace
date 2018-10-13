@@ -11,12 +11,34 @@ exports[`VisibleTodoList should match enzyme shallow snapshot 1`] = `
           Array [],
           Array [],
         ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": Object {
+              "todos": Array [],
+              "visibilityFilter": "SHOW_ALL",
+            },
+          },
+          Object {
+            "isThrow": false,
+            "value": Object {
+              "todos": Array [],
+              "visibilityFilter": "SHOW_ALL",
+            },
+          },
+        ],
       },
       "subscribe": [MockFunction] {
         "calls": Array [
           Array [
             [Function],
           ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
         ],
       },
     }
@@ -38,12 +60,34 @@ exports[`VisibleTodoList should match enzyme shallow snapshot 1`] = `
             Array [],
             Array [],
           ],
+          "results": Array [
+            Object {
+              "isThrow": false,
+              "value": Object {
+                "todos": Array [],
+                "visibilityFilter": "SHOW_ALL",
+              },
+            },
+            Object {
+              "isThrow": false,
+              "value": Object {
+                "todos": Array [],
+                "visibilityFilter": "SHOW_ALL",
+              },
+            },
+          ],
         },
         "subscribe": [MockFunction] {
           "calls": Array [
             Array [
               [Function],
             ],
+          ],
+          "results": Array [
+            Object {
+              "isThrow": false,
+              "value": undefined,
+            },
           ],
         },
       },

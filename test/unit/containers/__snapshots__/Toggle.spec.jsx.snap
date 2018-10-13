@@ -12,12 +12,32 @@ exports[`Toggle should match enzyme shallow snapshot 1`] = `
           Array [],
           Array [],
         ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": Object {
+              "toggle": false,
+            },
+          },
+          Object {
+            "isThrow": false,
+            "value": Object {
+              "toggle": false,
+            },
+          },
+        ],
       },
       "subscribe": [MockFunction] {
         "calls": Array [
           Array [
             [Function],
           ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
         ],
       },
     }
@@ -39,12 +59,32 @@ exports[`Toggle should match enzyme shallow snapshot 1`] = `
             Array [],
             Array [],
           ],
+          "results": Array [
+            Object {
+              "isThrow": false,
+              "value": Object {
+                "toggle": false,
+              },
+            },
+            Object {
+              "isThrow": false,
+              "value": Object {
+                "toggle": false,
+              },
+            },
+          ],
         },
         "subscribe": [MockFunction] {
           "calls": Array [
             Array [
               [Function],
             ],
+          ],
+          "results": Array [
+            Object {
+              "isThrow": false,
+              "value": undefined,
+            },
           ],
         },
       },

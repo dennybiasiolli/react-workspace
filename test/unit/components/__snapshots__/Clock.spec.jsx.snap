@@ -6,7 +6,7 @@ exports[`Clock should match enzyme shallow snapshot 1`] = `
     TimerComponent
   </h3>
   <p>
-    It is 
+    It is
     18:50:37
     .
   </p>

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+import {
+  BrowserRouter, Route, Switch, Link,
+} from 'react-router-dom';
 
 import FunctionalComponent from '@/components/FunctionalComponent';
 import ClassComponent from '@/components/ClassComponent';
@@ -45,15 +47,17 @@ const App = () => (
           <Route
             exact
             path="/functional-component"
-            render={props =>
-              <FunctionalComponent {...props} name="Functional Component" />}
+            render={props => (
+              <FunctionalComponent {...props} name="Functional Component" />
+            )}
           />
 
           <Route
             exact
             path="/class-component"
-            render={props =>
-              <ClassComponent {...props} name="Class Component" />}
+            render={props => (
+              <ClassComponent {...props} name="Class Component" />
+            )}
           />
 
 

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 const Link = ({ active, children, onClick }) => (
   <button
+    type="button"
     disabled={active}
     style={{
       textDecoration: active ? 'underline' : undefined,

@@ -12,12 +12,32 @@ exports[`FilterLink should match enzyme shallow snapshot 1`] = `
           Array [],
           Array [],
         ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": Object {
+              "visibilityFilter": "abcd",
+            },
+          },
+          Object {
+            "isThrow": false,
+            "value": Object {
+              "visibilityFilter": "abcd",
+            },
+          },
+        ],
       },
       "subscribe": [MockFunction] {
         "calls": Array [
           Array [
             [Function],
           ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
         ],
       },
     }
@@ -39,12 +59,32 @@ exports[`FilterLink should match enzyme shallow snapshot 1`] = `
             Array [],
             Array [],
           ],
+          "results": Array [
+            Object {
+              "isThrow": false,
+              "value": Object {
+                "visibilityFilter": "abcd",
+              },
+            },
+            Object {
+              "isThrow": false,
+              "value": Object {
+                "visibilityFilter": "abcd",
+              },
+            },
+          ],
         },
         "subscribe": [MockFunction] {
           "calls": Array [
             Array [
               [Function],
             ],
+          ],
+          "results": Array [
+            Object {
+              "isThrow": false,
+              "value": undefined,
+            },
           ],
         },
       },
@@ -70,12 +110,38 @@ exports[`FilterLink should match enzyme shallow snapshot 2`] = `
           Array [],
           Array [],
         ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": Object {
+              "visibilityFilter": "abcd",
+            },
+          },
+          Object {
+            "isThrow": false,
+            "value": Object {
+              "visibilityFilter": "abcd",
+            },
+          },
+          Object {
+            "isThrow": false,
+            "value": Object {
+              "visibilityFilter": "abcd",
+            },
+          },
+        ],
       },
       "subscribe": [MockFunction] {
         "calls": Array [
           Array [
             [Function],
           ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
         ],
       },
     }
@@ -98,12 +164,38 @@ exports[`FilterLink should match enzyme shallow snapshot 2`] = `
             Array [],
             Array [],
           ],
+          "results": Array [
+            Object {
+              "isThrow": false,
+              "value": Object {
+                "visibilityFilter": "abcd",
+              },
+            },
+            Object {
+              "isThrow": false,
+              "value": Object {
+                "visibilityFilter": "abcd",
+              },
+            },
+            Object {
+              "isThrow": false,
+              "value": Object {
+                "visibilityFilter": "abcd",
+              },
+            },
+          ],
         },
         "subscribe": [MockFunction] {
           "calls": Array [
             Array [
               [Function],
             ],
+          ],
+          "results": Array [
+            Object {
+              "isThrow": false,
+              "value": undefined,
+            },
           ],
         },
       },
