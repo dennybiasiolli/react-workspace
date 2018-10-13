@@ -5,11 +5,13 @@ exports[`PostList should match enzyme shallow snapshot 1`] = `
   <ul />
   <button
     onClick={[Function]}
+    type="button"
   >
     Fetch Posts OK
   </button>
   <button
     onClick={[Function]}
+    type="button"
   >
     Fetch Posts Errors
   </button>
@@ -24,11 +26,13 @@ exports[`PostList should match enzyme shallow snapshot 2`] = `
   <ul />
   <button
     onClick={[Function]}
+    type="button"
   >
     Fetch Posts OK
   </button>
   <button
     onClick={[Function]}
+    type="button"
   >
     Fetch Posts Errors
   </button>
@@ -46,11 +50,13 @@ exports[`PostList should match enzyme shallow snapshot 3`] = `
   </ul>
   <button
     onClick={[Function]}
+    type="button"
   >
     Fetch Posts OK
   </button>
   <button
     onClick={[Function]}
+    type="button"
   >
     Fetch Posts Errors
   </button>
@@ -71,11 +77,13 @@ exports[`PostList should match enzyme shallow snapshot 4`] = `
   </ul>
   <button
     onClick={[Function]}
+    type="button"
   >
     Fetch Posts OK
   </button>
   <button
     onClick={[Function]}
+    type="button"
   >
     Fetch Posts Errors
   </button>
@@ -85,17 +93,19 @@ exports[`PostList should match enzyme shallow snapshot 4`] = `
 exports[`PostList should match enzyme shallow snapshot 5`] = `
 <div>
   <p>
-    Error: 
+    Error:
     fetching error
   </p>
   <ul />
   <button
     onClick={[Function]}
+    type="button"
   >
     Fetch Posts OK
   </button>
   <button
     onClick={[Function]}
+    type="button"
   >
     Fetch Posts Errors
   </button>

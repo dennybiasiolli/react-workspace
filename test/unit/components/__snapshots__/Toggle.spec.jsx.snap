@@ -7,21 +7,24 @@ exports[`Toggle should match enzyme mount snapshot 1`] = `
 >
   <div>
     <p>
-      Is toggled 
+      Is toggled
       OFF
     </p>
     <button
       onClick={[Function]}
+      type="button"
     >
       Toggle
     </button>
     <button
       onClick={[Function]}
+      type="button"
     >
       Toggle ON
     </button>
     <button
       onClick={[Function]}
+      type="button"
     >
       Toggle OFF
     </button>
@@ -37,26 +40,35 @@ exports[`Toggle should match enzyme mount snapshot 2`] = `
       "calls": Array [
         Array [],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
 >
   <div>
     <p>
-      Is toggled 
+      Is toggled
       ON
     </p>
     <button
       onClick={[Function]}
+      type="button"
     >
       Toggle
     </button>
     <button
       onClick={[Function]}
+      type="button"
     >
       Toggle ON
     </button>
     <button
       onClick={[Function]}
+      type="button"
     >
       Toggle OFF
     </button>
@@ -73,26 +85,39 @@ exports[`Toggle should match enzyme mount snapshot 3`] = `
         Array [],
         Array [],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     }
   }
 >
   <div>
     <p>
-      Is toggled 
+      Is toggled
       OFF
     </p>
     <button
       onClick={[Function]}
+      type="button"
     >
       Toggle
     </button>
     <button
       onClick={[Function]}
+      type="button"
     >
       Toggle ON
     </button>
     <button
       onClick={[Function]}
+      type="button"
     >
       Toggle OFF
     </button>
@@ -103,21 +128,24 @@ exports[`Toggle should match enzyme mount snapshot 3`] = `
 exports[`Toggle should match enzyme shallow snapshot 1`] = `
 <div>
   <p>
-    Is toggled 
+    Is toggled
     OFF
   </p>
   <button
     onClick={[Function]}
+    type="button"
   >
     Toggle
   </button>
   <button
     onClick={[Function]}
+    type="button"
   >
     Toggle ON
   </button>
   <button
     onClick={[Function]}
+    type="button"
   >
     Toggle OFF
   </button>
@@ -127,21 +155,24 @@ exports[`Toggle should match enzyme shallow snapshot 1`] = `
 exports[`Toggle should match enzyme shallow snapshot 2`] = `
 <div>
   <p>
-    Is toggled 
+    Is toggled
     ON
   </p>
   <button
     onClick={[Function]}
+    type="button"
   >
     Toggle
   </button>
   <button
     onClick={[Function]}
+    type="button"
   >
     Toggle ON
   </button>
   <button
     onClick={[Function]}
+    type="button"
   >
     Toggle OFF
   </button>
@@ -151,21 +182,24 @@ exports[`Toggle should match enzyme shallow snapshot 2`] = `
 exports[`Toggle should match enzyme shallow snapshot 3`] = `
 <div>
   <p>
-    Is toggled 
+    Is toggled
     OFF
   </p>
   <button
     onClick={[Function]}
+    type="button"
   >
     Toggle
   </button>
   <button
     onClick={[Function]}
+    type="button"
   >
     Toggle ON
   </button>
   <button
     onClick={[Function]}
+    type="button"
   >
     Toggle OFF
   </button>
@@ -175,21 +209,24 @@ exports[`Toggle should match enzyme shallow snapshot 3`] = `
 exports[`Toggle should match react-test-renderer snapshot 1`] = `
 <div>
   <p>
-    Is toggled 
+    Is toggled
     OFF
   </p>
   <button
     onClick={[Function]}
+    type="button"
   >
     Toggle
   </button>
   <button
     onClick={[Function]}
+    type="button"
   >
     Toggle ON
   </button>
   <button
     onClick={[Function]}
+    type="button"
   >
     Toggle OFF
   </button>
@@ -199,21 +236,24 @@ exports[`Toggle should match react-test-renderer snapshot 1`] = `
 exports[`Toggle should match react-test-renderer snapshot 2`] = `
 <div>
   <p>
-    Is toggled 
+    Is toggled
     ON
   </p>
   <button
     onClick={[Function]}
+    type="button"
   >
     Toggle
   </button>
   <button
     onClick={[Function]}
+    type="button"
   >
     Toggle ON
   </button>
   <button
     onClick={[Function]}
+    type="button"
   >
     Toggle OFF
   </button>
@@ -223,21 +263,24 @@ exports[`Toggle should match react-test-renderer snapshot 2`] = `
 exports[`Toggle should match react-test-renderer snapshot 3`] = `
 <div>
   <p>
-    Is toggled 
+    Is toggled
     OFF
   </p>
   <button
     onClick={[Function]}
+    type="button"
   >
     Toggle
   </button>
   <button
     onClick={[Function]}
+    type="button"
   >
     Toggle ON
   </button>
   <button
     onClick={[Function]}
+    type="button"
   >
     Toggle OFF
   </button>

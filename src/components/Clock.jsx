@@ -26,10 +26,15 @@ class Clock extends React.Component {
   }
 
   render() {
+    const { date } = this.state;
     return (
       <div>
         <h3>TimerComponent</h3>
-        <p>It is {this.state.date.toLocaleTimeString()}.</p>
+        <p>
+          It is
+          {date.toLocaleTimeString()}
+          .
+        </p>
       </div>
     );
   }

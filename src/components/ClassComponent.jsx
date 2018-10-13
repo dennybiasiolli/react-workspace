@@ -11,7 +11,9 @@ class ClassComponent extends React.Component {
   }
 
   render() {
-    return this.state.test && <h3>{this.props.name}</h3>;
+    const { test } = this.state;
+    const { name } = this.props;
+    return test && <h3>{name}</h3>;
   }
 }
 

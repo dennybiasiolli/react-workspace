@@ -15,12 +15,40 @@ exports[`ConnectedCalculator should match enzyme shallow snapshot 1`] = `
           Array [],
           Array [],
         ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": Object {
+              "temperatures": Object {
+                "celsius": "",
+                "fahrenheit": "",
+                "scale": "c",
+              },
+            },
+          },
+          Object {
+            "isThrow": false,
+            "value": Object {
+              "temperatures": Object {
+                "celsius": "",
+                "fahrenheit": "",
+                "scale": "c",
+              },
+            },
+          },
+        ],
       },
       "subscribe": [MockFunction] {
         "calls": Array [
           Array [
             [Function],
           ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
         ],
       },
     }
@@ -42,12 +70,40 @@ exports[`ConnectedCalculator should match enzyme shallow snapshot 1`] = `
             Array [],
             Array [],
           ],
+          "results": Array [
+            Object {
+              "isThrow": false,
+              "value": Object {
+                "temperatures": Object {
+                  "celsius": "",
+                  "fahrenheit": "",
+                  "scale": "c",
+                },
+              },
+            },
+            Object {
+              "isThrow": false,
+              "value": Object {
+                "temperatures": Object {
+                  "celsius": "",
+                  "fahrenheit": "",
+                  "scale": "c",
+                },
+              },
+            },
+          ],
         },
         "subscribe": [MockFunction] {
           "calls": Array [
             Array [
               [Function],
             ],
+          ],
+          "results": Array [
+            Object {
+              "isThrow": false,
+              "value": undefined,
+            },
           ],
         },
       },

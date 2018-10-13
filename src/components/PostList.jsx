@@ -1,18 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const PostList = props => (
+const PostList = ({
+  isFetching,
+  error,
+  posts,
+  onFetchPosts,
+}) => (
   <div>
-    {props.isFetching && <p>Fetching...</p>}
-    {!props.isFetching && props.error && <p>Error: {props.error.description}</p>}
+    {isFetching && <p>Fetching...</p>}
+    {!isFetching && error && (
+      <p>
+        Error:
+        {error.description}
+      </p>
+    )}
     <ul>
       {
-        props.posts.map(post =>
-          <li key={post.id}>{post.description}</li>)
+        posts.map(post => <li key={post.id}>{post.description}</li>)
       }
     </ul>
-    <button onClick={() => props.onFetchPosts(true)}>Fetch Posts OK</button>
-    <button onClick={() => props.onFetchPosts(false)}>Fetch Posts Errors</button>
+    <button type="button" onClick={() => onFetchPosts(true)}>Fetch Posts OK</button>
+    <button type="button" onClick={() => onFetchPosts(false)}>Fetch Posts Errors</button>
   </div>
 );
 

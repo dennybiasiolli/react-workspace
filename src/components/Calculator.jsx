@@ -4,22 +4,27 @@ import PropTypes from 'prop-types';
 import TemperatureInput from './TemperatureInput';
 import BoilingVerdict from './BoilingVerdict';
 
-const Calculator = props => (
+const Calculator = ({
+  celsius,
+  fahrenheit,
+  onCelsiusChange,
+  onFahrenheitChange,
+}) => (
   <div>
     <TemperatureInput
       scale="c"
-      temperature={props.celsius}
-      onTemperatureChange={temperature => props.onCelsiusChange(temperature)}
+      temperature={celsius}
+      onTemperatureChange={temperature => onCelsiusChange(temperature)}
     />
 
     <TemperatureInput
       scale="f"
-      temperature={props.fahrenheit}
-      onTemperatureChange={temperature => props.onFahrenheitChange(temperature)}
+      temperature={fahrenheit}
+      onTemperatureChange={temperature => onFahrenheitChange(temperature)}
     />
 
     <BoilingVerdict
-      celsius={parseFloat(props.celsius || 0) || 0}
+      celsius={parseFloat(celsius || 0) || 0}
     />
 
   </div>

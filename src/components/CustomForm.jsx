@@ -44,6 +44,12 @@ class CustomForm extends React.Component {
   }
 
   render() {
+    const {
+      textVal,
+      textareaVal,
+      selectVal,
+      selectMultipleVal,
+    } = this.state;
     return (
       <form onSubmit={e => CustomForm.handleSubmit(e)}>
         <p>
@@ -52,7 +58,7 @@ class CustomForm extends React.Component {
             <input
               id="input01"
               type="text"
-              value={this.state.textVal}
+              value={textVal}
               onChange={e => this.handleChangeText(e)}
             />
           </label>
@@ -62,7 +68,7 @@ class CustomForm extends React.Component {
             Textarea:
             <textarea
               id="input02"
-              value={this.state.textareaVal}
+              value={textareaVal}
               onChange={e => this.handleChangeTextarea(e)}
             />
           </label>
@@ -72,12 +78,11 @@ class CustomForm extends React.Component {
             Pick your favorite La Croix flavor:
             <select
               id="input03"
-              value={this.state.selectVal}
+              value={selectVal}
               onChange={e => this.handleChangeSelect(e)}
             >
               {
-                this.selectable.map(e =>
-                  <option key={e.value} value={e.value}>{e.text}</option>)
+                this.selectable.map(e => <option key={e.value} value={e.value}>{e.text}</option>)
               }
             </select>
           </label>
@@ -88,16 +93,15 @@ class CustomForm extends React.Component {
             <select
               id="input04"
               multiple
-              value={this.state.selectMultipleVal}
+              value={selectMultipleVal}
               onChange={e => this.handleChangeSelectMultiple(e)}
             >
               {
-                this.selectable.map(e =>
-                  <option key={e.value} value={e.value}>{e.text}</option>)
+                this.selectable.map(e => <option key={e.value} value={e.value}>{e.text}</option>)
               }
             </select>
           </label>
-          {this.state.selectMultipleVal}
+          {selectMultipleVal}
         </p>
         <input type="submit" value="Submit" />
       </form>

@@ -1,16 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Link should match enzyme shallow snapshot 1`] = `
-<a
+<button
+  disabled={false}
   href=""
   onClick={[Function]}
+  style={
+    Object {
+      "textDecoration": undefined,
+    }
+  }
+  type="button"
 >
   Test 1
-</a>
+</button>
 `;
 
 exports[`Link should match enzyme shallow snapshot 2`] = `
-<span>
+<button
+  disabled={true}
+  href=""
+  onClick={[Function]}
+  style={
+    Object {
+      "textDecoration": "underline",
+    }
+  }
+  type="button"
+>
   Test 1
-</span>
+</button>
 `;

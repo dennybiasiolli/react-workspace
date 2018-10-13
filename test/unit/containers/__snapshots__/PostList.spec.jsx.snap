@@ -14,12 +14,40 @@ exports[`PostList should match enzyme shallow snapshot 1`] = `
           Array [],
           Array [],
         ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": Object {
+              "posts": Object {
+                "error": null,
+                "isFetching": false,
+                "posts": Array [],
+              },
+            },
+          },
+          Object {
+            "isThrow": false,
+            "value": Object {
+              "posts": Object {
+                "error": null,
+                "isFetching": false,
+                "posts": Array [],
+              },
+            },
+          },
+        ],
       },
       "subscribe": [MockFunction] {
         "calls": Array [
           Array [
             [Function],
           ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
         ],
       },
     }
@@ -41,12 +69,40 @@ exports[`PostList should match enzyme shallow snapshot 1`] = `
             Array [],
             Array [],
           ],
+          "results": Array [
+            Object {
+              "isThrow": false,
+              "value": Object {
+                "posts": Object {
+                  "error": null,
+                  "isFetching": false,
+                  "posts": Array [],
+                },
+              },
+            },
+            Object {
+              "isThrow": false,
+              "value": Object {
+                "posts": Object {
+                  "error": null,
+                  "isFetching": false,
+                  "posts": Array [],
+                },
+              },
+            },
+          ],
         },
         "subscribe": [MockFunction] {
           "calls": Array [
             Array [
               [Function],
             ],
+          ],
+          "results": Array [
+            Object {
+              "isThrow": false,
+              "value": undefined,
+            },
           ],
         },
       },
