@@ -6,6 +6,7 @@ import Clock from '@/components/Clock';
 
 // mocking global Date object
 const DATE_TO_USE = new Date(2018, 4, 15, 18, 50, 37);
+jest.spyOn(DATE_TO_USE, 'toLocaleTimeString').mockReturnValue('18:50:37');
 const mockedDate = Date;
 global.Date = jest.fn(() => DATE_TO_USE);
 global.Date.UTC = mockedDate.UTC;
