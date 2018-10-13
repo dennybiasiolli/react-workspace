@@ -27,7 +27,7 @@ describe('Link', () => {
     const clickEvent = {
       preventDefault: jest.fn(),
     };
-    wrapper.find('a').simulate('click', clickEvent);
+    wrapper.find('button').simulate('click', clickEvent);
     expect(props.onClick).toHaveBeenCalledWith();
     expect(clickEvent.preventDefault).toHaveBeenCalledWith();
   });
