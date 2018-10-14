@@ -13,7 +13,6 @@ jest.mock('@/store/actions', () => ({
 
 const state = {
   temperatures: {
-    scale: 'c',
     celsius: '',
     fahrenheit: '',
   },
@@ -49,10 +48,9 @@ describe('ConnectedCalculator', () => {
     };
     const wrapper = shallow(<ConnectedCalculator {...props} />);
     const {
-      scale, celsius, fahrenheit,
+      celsius, fahrenheit,
       onCelsiusChange, onFahrenheitChange,
     } = wrapper.find(CalculatorComponent).props();
-    expect(scale).toBe(state.temperatures.scale);
     expect(celsius).toBe(state.temperatures.celsius);
     expect(fahrenheit).toBe(state.temperatures.fahrenheit);
     expect(onCelsiusChange).toBeDefined();

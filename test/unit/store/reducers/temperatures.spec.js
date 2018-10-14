@@ -5,7 +5,6 @@ import temperaturesReducer from '@/store/reducers/temperatures';
 describe('temperatures', () => {
   test('should return default value', () => {
     expect(temperaturesReducer(undefined, {})).toEqual({
-      scale: 'c',
       celsius: '',
       fahrenheit: '',
     });
@@ -13,7 +12,6 @@ describe('temperatures', () => {
 
   test('should work with SET_CELSIUS', () => {
     const initialState = {
-      scale: 'aaa',
       celsius: 'foo',
       fahrenheit: 'bar',
     };
@@ -21,7 +19,6 @@ describe('temperatures', () => {
       type: SET_CELSIUS,
       temperature: '100',
     })).toEqual({
-      scale: 'c',
       celsius: '100',
       fahrenheit: '212',
     });
@@ -29,7 +26,6 @@ describe('temperatures', () => {
 
   test('should work with SET_FAHRENHEIT', () => {
     const initialState = {
-      scale: 'aaa',
       celsius: 'foo',
       fahrenheit: 'bar',
     };
@@ -37,7 +33,6 @@ describe('temperatures', () => {
       type: SET_FAHRENHEIT,
       temperature: '212',
     })).toEqual({
-      scale: 'f',
       celsius: '100',
       fahrenheit: '212',
     });
@@ -46,7 +41,6 @@ describe('temperatures', () => {
 
   test('should work setting an invalid temperature', () => {
     const initialState = {
-      scale: 'aaa',
       celsius: 'foo',
       fahrenheit: 'bar',
     };
@@ -54,7 +48,6 @@ describe('temperatures', () => {
       type: SET_CELSIUS,
       temperature: 'abc',
     })).toEqual({
-      scale: 'c',
       celsius: 'abc',
       fahrenheit: '',
     });

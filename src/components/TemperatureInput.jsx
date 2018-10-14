@@ -17,7 +17,7 @@ class TemperatureInput extends React.Component {
     return (
       <fieldset>
         <legend>
-          Enter temperature in
+          Enter temperature in&nbsp;
           {scaleNames[scale]}
           :
         </legend>
