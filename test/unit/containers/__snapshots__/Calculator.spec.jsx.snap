@@ -6,7 +6,6 @@ exports[`ConnectedCalculator should match enzyme shallow snapshot 1`] = `
   fahrenheit=""
   onCelsiusChange={[Function]}
   onFahrenheitChange={[Function]}
-  scale="c"
   store={
     Object {
       "dispatch": [MockFunction],
@@ -22,7 +21,6 @@ exports[`ConnectedCalculator should match enzyme shallow snapshot 1`] = `
               "temperatures": Object {
                 "celsius": "",
                 "fahrenheit": "",
-                "scale": "c",
               },
             },
           },
@@ -32,7 +30,6 @@ exports[`ConnectedCalculator should match enzyme shallow snapshot 1`] = `
               "temperatures": Object {
                 "celsius": "",
                 "fahrenheit": "",
-                "scale": "c",
               },
             },
           },
@@ -77,7 +74,6 @@ exports[`ConnectedCalculator should match enzyme shallow snapshot 1`] = `
                 "temperatures": Object {
                   "celsius": "",
                   "fahrenheit": "",
-                  "scale": "c",
                 },
               },
             },
@@ -87,7 +83,6 @@ exports[`ConnectedCalculator should match enzyme shallow snapshot 1`] = `
                 "temperatures": Object {
                   "celsius": "",
                   "fahrenheit": "",
-                  "scale": "c",
                 },
               },
             },
