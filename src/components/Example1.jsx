@@ -5,15 +5,29 @@ class Example1 extends React.Component {
     super(props);
 
     this.state = {
-      foo: 'bar',
+      counter: 0,
     };
   }
 
+  handleButtonClick() {
+    const { counter } = this.state;
+    return this.setState({
+      counter: counter + 1,
+    });
+  }
+
   render() {
-    const { foo } = this.state;
+    const { counter } = this.state;
     return (
       <div>
-        {foo}
+        Clicked&nbsp;
+        {counter}
+        &nbsp;time
+        {counter !== 1 ? 's' : ''}
+        <br />
+        <button type="button" onClick={() => this.handleButtonClick()}>
+          Click me
+        </button>
       </div>
     );
   }

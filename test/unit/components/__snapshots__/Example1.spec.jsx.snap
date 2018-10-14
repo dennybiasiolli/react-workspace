@@ -1,7 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Example1 should increment counter clicking on button 1`] = `
+<div>
+  Clicked 
+  1
+   time
+  <br />
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    Click me
+  </button>
+</div>
+`;
+
 exports[`Example1 should match enzyme shallow snapshot 1`] = `
 <div>
-  bar
+  Clicked 
+  0
+   time
+  s
+  <br />
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    Click me
+  </button>
 </div>
 `;
