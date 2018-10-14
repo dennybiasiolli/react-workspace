@@ -16,7 +16,6 @@ const tryConvert = (temperature, convert) => {
 
 
 const defaultState = {
-  scale: 'c',
   celsius: '',
   fahrenheit: '',
 };
@@ -25,13 +24,11 @@ export default (state = defaultState, action) => {
   switch (action.type) {
     case SET_CELSIUS:
       return {
-        scale: 'c',
         celsius: action.temperature,
         fahrenheit: tryConvert(action.temperature, toFahrenheit),
       };
     case SET_FAHRENHEIT:
       return {
-        scale: 'f',
         celsius: tryConvert(action.temperature, toCelsius),
         fahrenheit: action.temperature,
       };
