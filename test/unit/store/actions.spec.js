@@ -10,6 +10,7 @@ import {
   fetchPostsFailure,
   fetchPostsSuccess,
   fetchPostsAsync,
+  incrementCounter,
 } from '@/store/actions';
 import {
   ADD_TODO,
@@ -21,6 +22,7 @@ import {
   FETCH_POSTS_REQUEST,
   FETCH_POSTS_FAILURE,
   FETCH_POSTS_SUCCESS,
+  INCREMENT_COUNTER,
 } from '@/store/actionTypes';
 
 
@@ -130,6 +132,12 @@ describe('actions', () => {
           expect(fnDispatch).toHaveBeenCalledWith(fetchPostsFailure(expectedErr));
         },
       );
+    });
+  });
+
+  test('incrementCounter should return expected value', () => {
+    expect(incrementCounter()).toEqual({
+      type: INCREMENT_COUNTER,
     });
   });
 });

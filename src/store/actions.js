@@ -8,6 +8,7 @@ import {
   FETCH_POSTS_REQUEST,
   FETCH_POSTS_FAILURE,
   FETCH_POSTS_SUCCESS,
+  INCREMENT_COUNTER,
 } from './actionTypes';
 
 /*
@@ -92,3 +93,7 @@ export const fetchPostsAsync = params => (dispatch) => {
     }, 500);
   });
 };
+
+export const incrementCounter = () => ({
+  type: INCREMENT_COUNTER,
+});
