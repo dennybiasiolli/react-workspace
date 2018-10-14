@@ -79,6 +79,13 @@ exports[`App should match enzyme shallow snapshot 1`] = `
       >
         PostList
       </Link>
+       | 
+      <Link
+        replace={false}
+        to="/example1"
+      >
+        Example 1
+      </Link>
       <hr />
       <Switch>
         <Route
@@ -125,6 +132,11 @@ exports[`App should match enzyme shallow snapshot 1`] = `
           component={[Function]}
           exact={true}
           path="/post-list"
+        />
+        <Route
+          component={[Function]}
+          exact={true}
+          path="/example1"
         />
         <Route>
           <h3>
