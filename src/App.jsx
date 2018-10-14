@@ -14,7 +14,7 @@ import Footer from '@/components/Footer';
 import Toggle from '@/containers/Toggle';
 import Calculator from '@/containers/Calculator';
 import PostList from '@/containers/PostList';
-import Example1 from '@/components/Example1';
+import Example1 from '@/containers/Example1';
 
 import { store } from '@/store';
 

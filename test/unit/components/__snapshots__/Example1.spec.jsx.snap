@@ -1,10 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Example1 should increment counter clicking on button 1`] = `
+exports[`Example1 should match enzyme shallow snapshot 1`] = `
 <div>
   Clicked 
-  1
+  0
    time
+  s
   <br />
   <button
     onClick={[Function]}
@@ -15,12 +16,11 @@ exports[`Example1 should increment counter clicking on button 1`] = `
 </div>
 `;
 
-exports[`Example1 should match enzyme shallow snapshot 1`] = `
+exports[`Example1 should match enzyme shallow snapshot when counter is 1 1`] = `
 <div>
   Clicked 
-  0
+  1
    time
-  s
   <br />
   <button
     onClick={[Function]}

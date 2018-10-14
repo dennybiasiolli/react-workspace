@@ -1,36 +1,25 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
-class Example1 extends React.Component {
-  constructor(props) {
-    super(props);
+const Example1 = ({
+  counter,
+  onIncrementCounter,
+}) => (
+  <div>
+    Clicked&nbsp;
+    {counter}
+    &nbsp;time
+    {counter !== 1 ? 's' : ''}
+    <br />
+    <button type="button" onClick={() => onIncrementCounter()}>
+      Click me
+    </button>
+  </div>
+);
 
-    this.state = {
-      counter: 0,
-    };
-  }
-
-  handleButtonClick() {
-    const { counter } = this.state;
-    return this.setState({
-      counter: counter + 1,
-    });
-  }
-
-  render() {
-    const { counter } = this.state;
-    return (
-      <div>
-        Clicked&nbsp;
-        {counter}
-        &nbsp;time
-        {counter !== 1 ? 's' : ''}
-        <br />
-        <button type="button" onClick={() => this.handleButtonClick()}>
-          Click me
-        </button>
-      </div>
-    );
-  }
-}
+Example1.propTypes = {
+  counter: PropTypes.number.isRequired,
+  onIncrementCounter: PropTypes.func.isRequired,
+};
 
 export default Example1;

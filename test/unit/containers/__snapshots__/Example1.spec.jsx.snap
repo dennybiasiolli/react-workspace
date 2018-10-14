@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ConnectedExample1 should match enzyme shallow snapshot 1`] = `
+<Example1
+  counter={0}
+  onIncrementCounter={[Function]}
+  store={
+    Object {
+      "dispatch": [MockFunction],
+      "getState": [MockFunction] {
+        "calls": Array [
+          Array [],
+          Array [],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": Object {
+              "counter": 0,
+            },
+          },
+          Object {
+            "isThrow": false,
+            "value": Object {
+              "counter": 0,
+            },
+          },
+        ],
+      },
+      "subscribe": [MockFunction] {
+        "calls": Array [
+          Array [
+            [Function],
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  storeSubscription={
+    Subscription {
+      "listeners": Object {
+        "clear": [Function],
+        "get": [Function],
+        "notify": [Function],
+        "subscribe": [Function],
+      },
+      "onStateChange": [Function],
+      "parentSub": undefined,
+      "store": Object {
+        "dispatch": [MockFunction],
+        "getState": [MockFunction] {
+          "calls": Array [
+            Array [],
+            Array [],
+          ],
+          "results": Array [
+            Object {
+              "isThrow": false,
+              "value": Object {
+                "counter": 0,
+              },
+            },
+            Object {
+              "isThrow": false,
+              "value": Object {
+                "counter": 0,
+              },
+            },
+          ],
+        },
+        "subscribe": [MockFunction] {
+          "calls": Array [
+            Array [
+              [Function],
+            ],
+          ],
+          "results": Array [
+            Object {
+              "isThrow": false,
+              "value": undefined,
+            },
+          ],
+        },
+      },
+      "unsubscribe": undefined,
+    }
+  }
+/>
+`;
